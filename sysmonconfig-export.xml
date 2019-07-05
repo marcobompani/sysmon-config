@@ -449,6 +449,10 @@
 		<ProcessAccess onmatch="include">
             <TargetImage condition="is">C:\Windows\system32\lsass.exe</TargetImage>
 		</ProcessAccess>
+<!-- Processes that you wish to exclude -->
+<ProcessAccess onmatch="exclude">
+    <SourceImage condition="is">C:\Program Files (x86)\VMware\VMware Workstation\vmware-authd.exe</SourceImage>
+</ProcessAccess>
 
 	<!--SYSMON EVENT ID 11 : FILE CREATED [FileCreate]-->
 		<!--EVENT 11: "File created"-->
